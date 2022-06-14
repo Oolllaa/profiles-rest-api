@@ -3,9 +3,9 @@ from profiles_api import views
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register("hello-viewset", views.HelloViewset, base_name="hello-viewset")
+router.register("hello-viewset", views.HelloViewset, basename="hello-viewset")
 router.register("profile", views.UserProfilesViewSet)
-
+router.register('feed', views.UserProfileFeedViewSet)
 
 
 
